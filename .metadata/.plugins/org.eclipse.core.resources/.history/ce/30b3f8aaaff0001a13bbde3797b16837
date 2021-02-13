@@ -1,0 +1,31 @@
+package ed_listas_3;
+
+import javax.swing.JOptionPane;
+
+public class TesteLivro {
+
+	public static void main(String[] args) {
+		PilhaLivros[] livros = new PilhaLivros[5];
+		int opc = 0;
+		String titulo;
+		int quantidade;
+		/*Livro livro = new Livro("The Mist", 2);
+		
+		System.out.println(livro.getTitulo() + "\n " + livro.getQuantidade()); */
+		
+		while (opc != 9) {
+			opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Adicionar Livro \n 2 - Remove Livro"));
+			switch(opc) {
+			case 1: titulo = JOptionPane.showInputDialog("Digite o titulo do livro");
+					quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de exemplares"));
+					livros.AdicionaLivro(titulo, quantidade);
+			break;
+			case 2: ;
+			break;
+			}
+		}
+
+		
+	}
+
+}

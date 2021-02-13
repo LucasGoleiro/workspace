@@ -1,0 +1,25 @@
+package ed_listas_3;
+
+import javax.swing.JOptionPane;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Fila fila = new Fila();
+		Pilha pilha = new Pilha();
+		int opc = 0;
+		while (opc != 9) {
+			opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Adicionar Fila \n 2 - Remove elemento \n Adiciona Pilha"));
+			switch(opc) {
+			case 1: fila.AdicionaFila(Integer.parseInt(JOptionPane.showInputDialog("Digite o elemento: 1")));
+			break;
+			case 2: fila.RemoveFila();
+			break;
+			case 3: pilha.AdicionaPilha(Integer.parseInt(JOptionPane.showInputDialog("Digite o elemento: 1")));
+			break;
+			}
+		}
+
+	}
+
+}

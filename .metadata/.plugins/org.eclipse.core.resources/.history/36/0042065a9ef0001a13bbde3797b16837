@@ -1,0 +1,10 @@
+package ed_listas_3;
+
+public class TesteLivro {
+
+	public static void main(String[] args) {
+		Livro[] livros = new Livro[5];
+
+	}
+
+}

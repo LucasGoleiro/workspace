@@ -1,0 +1,45 @@
+package package_aluno;
+
+import java.util.Date;
+
+import javax.swing.JOptionPane;
+
+public class GestaoAlunos {
+	int indice = 0;
+	Aluno[] alunos = new Aluno[50];
+	
+	public static void criar() {
+		long id;
+		String nome;
+		String ra;
+		
+		id = Integer.parseInt(JOptionPane.showInputDialog("Digite o ID do aluno"));
+		nome = JOptionPane.showInputDialog("Digite o nome do aluno");
+		ra = JOptionPane.showInputDialog("Digite o RA do aluno");
+		
+		Aluno aluno = new Aluno();
+		aluno.setId(id);
+		aluno.setNome(nome);
+		aluno.setRa(ra);
+		
+		aluno.exibir(aluno);
+		
+	}
+	
+	public static void atualizar() {
+		
+	}
+	
+	public static void excluir() {
+		
+	}
+	
+	public static void exibir() {
+		
+	}
+	
+	public static void Menu() {
+		
+	}
+	
+}

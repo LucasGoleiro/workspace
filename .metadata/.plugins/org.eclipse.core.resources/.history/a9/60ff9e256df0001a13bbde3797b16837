@@ -1,0 +1,22 @@
+package ed_lista_3;
+
+import javax.swing.JOptionPane;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Fila fila = new Fila();
+		int opc = 0;
+		while (opc != 9) {
+			opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Adicionar elemento \n 2 - Remove elemento"));
+			switch(opc) {
+			case 1: fila.AdicionaFila(Integer.parseInt(JOptionPane.showInputDialog("Digite o elemento: 1")));
+			break;
+			case 2: fila.RemoveFila();
+			break;
+			}
+		}
+
+	}
+
+}

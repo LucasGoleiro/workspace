@@ -1,0 +1,26 @@
+package package_aluno;
+
+import javax.swing.JOptionPane;
+
+
+public class Main {
+	public static void main (String[] args) {
+		String opc = "c";
+		
+		opc = JOptionPane.showInputDialog("O que deseja fazer?");
+		
+		switch(opc) {
+			case "c": GestaoAlunos.criar();
+			break;
+			case "e": GestaoAlunos.exibir(aluno);
+			break;
+			case "a": GestaoAlunos.atualizar();
+			break;
+			case "r": GestaoAlunos.excluir();;
+			break;
+			case "s": System.exit(0);
+			default: JOptionPane.showMessageDialog(null, "Opção inválida !!!!!!");
+		}
+	
+	}
+}

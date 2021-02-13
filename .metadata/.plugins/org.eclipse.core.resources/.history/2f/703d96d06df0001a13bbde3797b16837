@@ -1,0 +1,49 @@
+package ed_listas_3;
+
+public class Pilha {
+	private int pilha[];                  
+	private int tamanho;                 
+
+	public Pilha() {                       
+		pilha=new int [10];                    
+		tamanho=0;                            
+	}
+	
+	public void AdicionaPilha(int elemento) {     
+
+		if (tamanho < pilha.length) {
+			pilha[tamanho] = elemento;                     
+			tamanho ++;                            
+		}
+		else{
+			System.out.println("Lista Cheia");    
+		}
+		
+		for (int i = 0; i < pilha.length; i ++) {
+			System.out.println(pilha[i]);
+		}
+		
+	} 
+	
+	public int RemovePilha() {
+
+		int retorno = 0;
+		if (tamanho>=1){                              
+			retorno=pilha[0];
+			pilha[0] = 0;
+			for (int i=1;i<=tamanho;i++){                      
+				pilha[i-1]=pilha[i];                        
+			} 
+			tamanho--;  
+			for (int i = 0; i < pilha.length; i ++) {
+				System.out.println(pilha[i]);
+			}
+		}
+		else {
+			System.out.println("Lista já está vazia !");
+		}
+		
+		return retorno;
+	}
+
+}

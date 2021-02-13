@@ -1,0 +1,21 @@
+package package_aluno;
+
+import javax.swing.JOptionPane;
+
+
+public class Main {
+	public static void main (String[] args) {
+		String opc = "c";
+		
+		for (int c = 1; c <=3 ; c++) {
+			GestaoAlunos.criar();
+		}
+		
+		JOptionPane.showMessageDialog(null, "Terminou");
+		
+		switch(opc) {
+		case "c": GestaoAlunos.criar();
+		}
+	
+	}
+}

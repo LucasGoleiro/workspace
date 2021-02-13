@@ -1,0 +1,13 @@
+package ed_listas_3;
+
+public class TesteLivro {
+
+	public static void main(String[] args) {
+		PilhaLivros[] livros = new PilhaLivros[5];
+		/*Livro livro = new Livro("The Mist", 2);
+		
+		System.out.println(livro.getTitulo() + "\n " + livro.getQuantidade()); */
+		
+	}
+
+}
